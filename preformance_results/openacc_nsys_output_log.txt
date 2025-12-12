@@ -1,0 +1,43 @@
+
+=== Running dataset 1 ===
+Loading points...
+Loaded 100000 points
+Loading regions...
+Loaded 1000 regions
+Running GPU aggregation...
+GPU Aggregation Time = 693.149 ms
+Writing results to /content/drive/MyDrive/COE506_ProjectCodes/output_data/openacc/out_1.csv...
+Done!
+Generating '/tmp/nsys-report-0223.qdstrm'
+[1/1] [0%                          ] profile_run1.nsys-rep[1/1] [0%                          ] profile_run1.nsys-rep[1/1] [===23%                      ] profile_run1.nsys-rep[1/1] [===24%                      ] profile_run1.nsys-rep[1/1] [====25%                     ] profile_run1.nsys-rep[1/1] [======33%                   ] profile_run1.nsys-rep[1/1] [=======38%                  ] profile_run1.nsys-rep[1/1] [========41%                 ] profile_run1.nsys-rep[1/1] [=========46%                ] profile_run1.nsys-rep[1/1] [========================97% ] profile_run1.nsys-rep[1/1] [========================100%] profile_run1.nsys-rep[1/1] [========================100%] profile_run1.nsys-rep
+Generated:
+    /content/drive/MyDrive/COE506_ProjectCodes/Profiling/openacc/profile_run1.nsys-rep
+=== Finished dataset 1 ===
+=== Running dataset 2 ===
+Loading points...
+Loaded 500000 points
+Loading regions...
+Loaded 5000 regions
+Running GPU aggregation...
+GPU Aggregation Time = 635.371 ms
+Writing results to /content/drive/MyDrive/COE506_ProjectCodes/output_data/openacc/out_2.csv...
+Done!
+Generating '/tmp/nsys-report-e29a.qdstrm'
+[1/1] [0%                          ] profile_run2.nsys-rep[1/1] [0%                          ] profile_run2.nsys-rep[1/1] [=17%                        ] profile_run2.nsys-rep[1/1] [======35%                   ] profile_run2.nsys-rep[1/1] [0%                          ] profile_run2.nsys-rep[1/1] [9%                          ] profile_run2.nsys-rep[1/1] [14%                         ] profile_run2.nsys-rep[1/1] [=15%                        ] profile_run2.nsys-rep[1/1] [==18%                       ] profile_run2.nsys-rep[1/1] [========================98% ] profile_run2.nsys-rep[1/1] [========================100%] profile_run2.nsys-rep[1/1] [========================100%] profile_run2.nsys-rep
+Generated:
+    /content/drive/MyDrive/COE506_ProjectCodes/Profiling/openacc/profile_run2.nsys-rep
+=== Finished dataset 2 ===
+=== Running dataset 3 ===
+Loading points...
+Loaded 1000000 points
+Loading regions...
+Loaded 10000 regions
+Running GPU aggregation...
+GPU Aggregation Time = 960.761 ms
+Writing results to /content/drive/MyDrive/COE506_ProjectCodes/output_data/openacc/out_3.csv...
+Done!
+Generating '/tmp/nsys-report-9e85.qdstrm'
+[1/1] [0%                          ] profile_run3.nsys-rep[1/1] [0%                          ] profile_run3.nsys-rep[1/1] [===22%                      ] profile_run3.nsys-rep[1/1] [=========45%                ] profile_run3.nsys-rep[1/1] [================68%         ] profile_run3.nsys-rep[1/1] [======================90%   ] profile_run3.nsys-rep[1/1] [======================92%   ] profile_run3.nsys-rep[1/1] [=======================93%  ] profile_run3.nsys-rep[1/1] [=======================95%  ] profile_run3.nsys-rep[1/1] [=======================96%  ] profile_run3.nsys-rep[1/1] [========================98% ] profile_run3.nsys-rep[1/1] [========================100%] profile_run3.nsys-rep[1/1] [0%                          ] profile_run3.nsys-rep[1/1] [8%                          ] profile_run3.nsys-rep[1/1] [12%                         ] profile_run3.nsys-rep[1/1] [13%                         ] profile_run3.nsys-rep[1/1] [=15%                        ] profile_run3.nsys-rep[1/1] [========================99% ] profile_run3.nsys-rep[1/1] [========================100%] profile_run3.nsys-rep[1/1] [========================100%] profile_run3.nsys-rep
+Generated:
+    /content/drive/MyDrive/COE506_ProjectCodes/Profiling/openacc/profile_run3.nsys-rep
+=== Finished dataset 3 ===

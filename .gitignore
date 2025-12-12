@@ -1,0 +1,55 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Compiled binaries
+*.o
+*.out
+*.exe
+naive_PointInPloy
+openacc_code
+main_cuda
+numba_impl
+
+# Profiling files (large binary files)
+*.nsys-rep
+*.qdrep
+*.sqlite
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Large data files (optional - comment out if you want to include them)
+# data/*.csv
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# NVIDIA profiling
+*.nvvp
+*.nvprof

@@ -1,0 +1,31 @@
+
+=== Running dataset 1 ===
+Loaded 100000 points and 1000 regions
+Data Loading Time = 105.223 ms
+CUDA Aggregation Time = 425.253 ms
+Total Time = 530.476 ms
+Generating '/tmp/nsys-report-ae43.qdstrm'
+[1/1] [0%                          ] profile_run1.nsys-rep[1/1] [0%                          ] profile_run1.nsys-rep[1/1] [====25%                     ] profile_run1.nsys-rep[1/1] [====26%                     ] profile_run1.nsys-rep[1/1] [====27%                     ] profile_run1.nsys-rep[1/1] [=======36%                  ] profile_run1.nsys-rep[1/1] [=======38%                  ] profile_run1.nsys-rep[1/1] [=========44%                ] profile_run1.nsys-rep[1/1] [============54%             ] profile_run1.nsys-rep[1/1] [============57%             ] profile_run1.nsys-rep[1/1] [========================97% ] profile_run1.nsys-rep[1/1] [========================100%] profile_run1.nsys-rep[1/1] [========================100%] profile_run1.nsys-rep
+Generated:
+    /content/drive/MyDrive/COE506_ProjectCodes/Profiling/cuda_c/profile_run1.nsys-rep
+=== Finished dataset 1 ===
+=== Running dataset 2 ===
+Loaded 500000 points and 5000 regions
+Data Loading Time = 757.873 ms
+CUDA Aggregation Time = 688.147 ms
+Total Time = 1446.019 ms
+Generating '/tmp/nsys-report-b8a3.qdstrm'
+[1/1] [0%                          ] profile_run2.nsys-rep[1/1] [0%                          ] profile_run2.nsys-rep[1/1] [=======38%                  ] profile_run2.nsys-rep[1/1] [=======39%                  ] profile_run2.nsys-rep[1/1] [========40%                 ] profile_run2.nsys-rep[1/1] [=============59%            ] profile_run2.nsys-rep[1/1] [=============60%            ] profile_run2.nsys-rep[1/1] [==============63%           ] profile_run2.nsys-rep[1/1] [===============66%          ] profile_run2.nsys-rep[1/1] [===============67%          ] profile_run2.nsys-rep[1/1] [=================72%        ] profile_run2.nsys-rep[1/1] [===================80%      ] profile_run2.nsys-rep[1/1] [=====================87%    ] profile_run2.nsys-rep[1/1] [=====================88%    ] profile_run2.nsys-rep[1/1] [=====================89%    ] profile_run2.nsys-rep[1/1] [========================98% ] profile_run2.nsys-rep[1/1] [========================100%] profile_run2.nsys-rep[1/1] [========================100%] profile_run2.nsys-rep
+Generated:
+    /content/drive/MyDrive/COE506_ProjectCodes/Profiling/cuda_c/profile_run2.nsys-rep
+=== Finished dataset 2 ===
+=== Running dataset 3 ===
+Loaded 1000000 points and 10000 regions
+Data Loading Time = 1021.411 ms
+CUDA Aggregation Time = 874.016 ms
+Total Time = 1895.427 ms
+Generating '/tmp/nsys-report-265b.qdstrm'
+[1/1] [0%                          ] profile_run3.nsys-rep[1/1] [0%                          ] profile_run3.nsys-rep[1/1] [5%                          ] profile_run3.nsys-rep[1/1] [0%                          ] profile_run3.nsys-rep[1/1] [=======36%                  ] profile_run3.nsys-rep[1/1] [=======37%                  ] profile_run3.nsys-rep[1/1] [=======38%                  ] profile_run3.nsys-rep[1/1] [============57%             ] profile_run3.nsys-rep[1/1] [=============58%            ] profile_run3.nsys-rep[1/1] [==============61%           ] profile_run3.nsys-rep[1/1] [==============64%           ] profile_run3.nsys-rep[1/1] [====================83%     ] profile_run3.nsys-rep[1/1] [====================84%     ] profile_run3.nsys-rep[1/1] [=======================96%  ] profile_run3.nsys-rep[1/1] [========================98% ] profile_run3.nsys-rep[1/1] [========================100%] profile_run3.nsys-rep[1/1] [========================100%] profile_run3.nsys-rep
+Generated:
+    /content/drive/MyDrive/COE506_ProjectCodes/Profiling/cuda_c/profile_run3.nsys-rep
+=== Finished dataset 3 ===
