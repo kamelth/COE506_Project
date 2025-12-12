@@ -8,7 +8,7 @@ This project implements high-performance point-in-polygon aggregation using mult
 
 **Course:** COE-506 GPU Programming and Architecture
 **Instructor:** Dr. Ayaz ul Hassan Khan
-**Institution:** [Your University Name]
+**Institution:** King Fahd University of Petroleum and Minerals
 
 ## Table of Contents
 
