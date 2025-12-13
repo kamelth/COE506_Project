@@ -456,11 +456,26 @@ nsys profile --force-overwrite true \
 
 ### Scalability Analysis
 
-Performance improvement factor vs naive CPU (Dataset 3):
+**Actual Performance Results (NVIDIA Tesla T4 GPU):**
 
-- **OpenACC:** 32.7× speedup
-- **Numba:** ~30× speedup
-- **CUDA C++:** 36.0× speedup
+| Implementation | Dataset 1 (100K, 1K) | Dataset 2 (500K, 5K) | Dataset 3 (1M, 10K) | Speedup (Dataset 3) |
+|----------------|---------------------|---------------------|---------------------|---------------------|
+| **Naive CPU**  | 483.4 ms            | 10,653.7 ms         | 31,660.6 ms         | 1.0× (baseline)     |
+| **OpenACC**    | 566.6 ms            | 643.6 ms            | 929.5 ms            | **34.1×**           |
+| **Numba CUDA** | 4,525.6 ms          | 4,550.1 ms          | 7,252.1 ms          | 4.4×                |
+| **CUDA C++**   | 610.6 ms            | 680.8 ms            | 1,141.1 ms          | **27.7×**           |
+
+**Performance improvement factor vs naive CPU (Dataset 3):**
+
+- **OpenACC:** 34.1× speedup (best performance)
+- **CUDA C++:** 27.7× speedup (excellent performance with fine control)
+- **Numba:** 4.4× speedup (shows room for optimization)
+
+**Key Observations:**
+- OpenACC achieves best speedup with minimal code changes
+- CUDA C++ provides strong performance with low-level optimization opportunities
+- Numba implementation underutilizes GPU (grid size warnings indicate optimization needed)
+- Both OpenACC and CUDA C++ maintain sub-second performance across all datasets
 
 ---
 
