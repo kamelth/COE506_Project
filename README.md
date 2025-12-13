@@ -311,8 +311,13 @@ This is an academic project for COE-506 course. If you'd like to contribute impr
 ## Team
 
 **COE506 Project Team**
-Course: GPU Programming and Architecture
-Instructor: Dr. Ayaz ul Hassan Khan
+* Instructor: Dr. Ayaz ul Hassan Khan
+* Group Members:
+
+    * **Rayan ALthonian**
+    * **BADER ALOBAIDAN**
+    * **KAMEL GERADO**
+
 
 ## Acknowledgments
 
