@@ -64,19 +64,18 @@ All implementations were tested on NVIDIA Tesla T4 GPU with three datasets of in
 
 | Implementation | Dataset 1 (100K points, 1K regions) | Dataset 2 (500K points, 5K regions) | Dataset 3 (1M points, 10K regions) | Speedup vs CPU (Dataset 3) |
 |----------------|-------------------------------------|-------------------------------------|-------------------------------------|---------------------------|
-| **Naive CPU**  | 483.4 ms                            | 10,653.7 ms                         | 31,660.6 ms                         | 1.0× (baseline)           |
-| **OpenACC**    | 566.6 ms                            | 643.6 ms                            | 929.5 ms                            | **34.1×**                 |
-| **Numba CUDA** | 4,525.6 ms                          | 4,550.1 ms                          | 7,252.1 ms                          | 4.4×                      |
-| **CUDA C++**   | 610.6 ms                            | 680.8 ms                            | 1,141.1 ms                          | **27.7×**                 |
-
-**Note:** CUDA C++ times shown are aggregation-only. Total times including data loading: 1,733.9 ms (Dataset 1), 2,427.9 ms (Dataset 2), 4,200.3 ms (Dataset 3).
+| **Naive CPU**  | 474 ms                              | 11,513 ms                           | 31,485 ms                           | 1.0× (baseline)           |
+| **CUDA C++**   | 425 ms                              | 688 ms                              | 874 ms                              | **36.0×** 🏆              |
+| **OpenACC**    | 693 ms                              | 635 ms                              | 961 ms                              | **32.8×**                 |
+| **Numba CUDA** | 2,272 ms                            | 1,319 ms                            | 2,075 ms                            | **15.2×**                 |
 
 **Key Findings:**
-- **OpenACC** achieves best performance with up to **34× speedup** on largest dataset
-- **CUDA C++** provides **28× speedup** with fine-grained control
+- **CUDA C++ achieves best performance** with **36× speedup** on largest dataset
+- **OpenACC provides excellent performance** (32.8× speedup) with minimal code changes
+- **Numba enables rapid GPU development** in Python with 15.2× speedup
+- All GPU implementations dramatically outperform CPU baseline
 - GPU implementations scale significantly better with increasing dataset size
-- OpenACC and CUDA C++ maintain consistent sub-second performance across all datasets
-- Numba implementation shows room for optimization (grid size under-utilization warnings)
+- Performance advantage increases substantially with larger datasets
 - See `preformance_results/` directory for detailed profiling logs
 
 ## Repository Structure

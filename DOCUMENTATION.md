@@ -460,22 +460,24 @@ nsys profile --force-overwrite true \
 
 | Implementation | Dataset 1 (100K, 1K) | Dataset 2 (500K, 5K) | Dataset 3 (1M, 10K) | Speedup (Dataset 3) |
 |----------------|---------------------|---------------------|---------------------|---------------------|
-| **Naive CPU**  | 483.4 ms            | 10,653.7 ms         | 31,660.6 ms         | 1.0× (baseline)     |
-| **OpenACC**    | 566.6 ms            | 643.6 ms            | 929.5 ms            | **34.1×**           |
-| **Numba CUDA** | 4,525.6 ms          | 4,550.1 ms          | 7,252.1 ms          | 4.4×                |
-| **CUDA C++**   | 610.6 ms            | 680.8 ms            | 1,141.1 ms          | **27.7×**           |
+| **Naive CPU**  | 474 ms              | 11,513 ms           | 31,485 ms           | 1.0× (baseline)     |
+| **CUDA C++**   | 425 ms              | 688 ms              | 874 ms              | **36.0×** 🏆        |
+| **OpenACC**    | 693 ms              | 635 ms              | 961 ms              | **32.8×**           |
+| **Numba CUDA** | 2,272 ms            | 1,319 ms            | 2,075 ms            | **15.2×**           |
 
 **Performance improvement factor vs naive CPU (Dataset 3):**
 
-- **OpenACC:** 34.1× speedup (best performance)
-- **CUDA C++:** 27.7× speedup (excellent performance with fine control)
-- **Numba:** 4.4× speedup (shows room for optimization)
+- **CUDA C++:** 36.0× speedup (best performance - optimized low-level implementation)
+- **OpenACC:** 32.8× speedup (excellent performance with high-level directives)
+- **Numba:** 15.2× speedup (good performance for Python-based GPU programming)
 
 **Key Observations:**
-- OpenACC achieves best speedup with minimal code changes
-- CUDA C++ provides strong performance with low-level optimization opportunities
-- Numba implementation underutilizes GPU (grid size warnings indicate optimization needed)
-- Both OpenACC and CUDA C++ maintain sub-second performance across all datasets
+- **CUDA C++ achieves best overall speedup (36×)** through low-level optimizations
+- **OpenACC delivers excellent performance (32.8×)** with minimal code modifications
+- **Numba provides solid Python-based GPU acceleration (15.2×)** for rapid development
+- All GPU implementations dramatically outperform CPU baseline
+- Performance advantage increases with dataset size (better scalability)
+- Both CUDA C++ and OpenACC maintain sub-second performance across all datasets
 
 ---
 
