@@ -119,30 +119,45 @@ COE506_Project/
 
 ## Setup Instructions
 
-### Running on Google Colab (Recommended)
+### Running on Google Colab (Recommended - Easiest Method)
 
-1. **Open the notebook in Google Colab:**
-   ```
-   https://colab.research.google.com/
-   ```
+**Quick Start (3 Simple Steps):**
 
-2. **Upload the notebook:**
-   - Go to File → Upload notebook
-   - Select `Colab_OpenACC_Numba_CUDA.ipynb`
+1. **Open the notebook directly from GitHub:**
+   - Go to: https://colab.research.google.com/github/kamelth/COE506_Project/blob/main/Colab_OpenACC_Numba_CUDA.ipynb
+   - Or manually upload `Colab_OpenACC_Numba_CUDA.ipynb` to Colab
 
-3. **Enable GPU runtime:**
+2. **Enable GPU runtime:**
    - Runtime → Change runtime type
    - Hardware accelerator → GPU (Tesla T4 recommended)
    - Save
 
-4. **Upload project files to Google Drive:**
-   - Create a folder named `COE506_Project` in your Google Drive
-   - Upload all files maintaining the directory structure shown above
+3. **Run the setup cells:**
+   - **Cell 1:** Check GPU availability (`nvidia-smi`)
+   - **Cell 2:** Mount Google Drive (you'll be prompted to authorize)
+   - **Cell 3:** Setup directories in your Google Drive
+   - **Cell 4:** **Automatic Project Setup** 🚀
+     - The notebook will automatically clone the project from GitHub
+     - Copy all source code and data files to your Google Drive
+     - Skip this step if files already exist (smart detection)
+     - No manual file uploads needed!
 
-5. **Run the notebook:**
-   - Execute cells sequentially
-   - The first cell will mount Google Drive
-   - Subsequent cells will install dependencies and run all implementations
+4. **Continue with the rest of the notebook:**
+   - Install NVIDIA HPC SDK (one-time, ~7 minutes)
+   - Run all implementations and see the results!
+
+**What Happens Automatically:**
+- ✅ Project cloned from GitHub
+- ✅ Source code copied to Google Drive (`COE506_Project/codes/`)
+- ✅ Data files copied to Google Drive (`COE506_Project/data/`)
+- ✅ Directory structure created automatically
+- ✅ Temporary files cleaned up
+
+**Alternative Method (Manual Upload):**
+If you prefer to manually upload files:
+1. Create a folder named `COE506_Project` in your Google Drive
+2. Upload `codes/` and `data/` directories maintaining the structure
+3. The notebook will detect existing files and skip the automatic clone
 
 ### Running Locally (Requires NVIDIA GPU)
 
@@ -157,7 +172,7 @@ COE506_Project/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/COE506_Project.git
+   git clone https://github.com/kamelth/COE506_Project.git
    cd COE506_Project
    ```
 
